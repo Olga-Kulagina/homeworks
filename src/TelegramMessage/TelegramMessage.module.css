@@ -1,0 +1,60 @@
+.message {
+    display: flex;
+    margin: 10px;
+    align-items: flex-end;
+}
+
+.avatarImg {
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    margin: 5px;
+}
+
+.messageCloud {
+    max-width: 300px;
+    position: relative;
+    padding: 10px;
+    margin-left: 15px;
+    background-color: lightcyan;
+    border-radius: 10px 10px 10px 0px;
+}
+/* before и after относятся к хвостику в облаке сообщения */
+.messageCloud::before {
+    position: absolute;
+    content: "";
+    width: 0px;
+    height: 0px;
+    bottom: 0;
+    left: -20px;
+    border: 10px solid;
+    border-left-color: transparent;
+    border-top-color: transparent;
+    border-right-color: lightcyan;
+    border-bottom-color: lightcyan;
+}
+
+.messageCloud::after {
+    position: absolute;
+    content: "";
+    width: 0px;
+    height: 0px;
+    bottom: 0;
+    left: -20px;
+    border: 10px solid;
+    border-left-color: transparent;
+    border-top-color: transparent;
+    border-right-color: black;
+    border-bottom-color: black;
+    border-bottom-right-radius: 15px 25px;
+}
+
+.userName {
+    font-weight: bold;
+    color: darkblue;
+}
+
+.messageTime {
+    text-align: right;
+    color: lightskyblue;
+}
