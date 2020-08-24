@@ -1,0 +1,50 @@
+.container {
+    width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.menu {
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    font-weight: bold;
+    position: relative;
+    overflow: hidden;
+}
+
+.menuBtn {
+    display: inline-block;
+    padding: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+.menuBtnActive {
+    color: #3061ff;
+}
+
+.menuButtons {
+    animation: menu 500ms ease-out forwards;
+}
+
+@keyframes menu {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.error {
+    font-size: 48px;
+    color: red;
+}
+
+.cat {
+    font-size: 30px;
+}

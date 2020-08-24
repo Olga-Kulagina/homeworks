@@ -1,3 +1,17 @@
 .someClass {
+    width: 500px;
+    margin: 0 auto;
+}
 
+.todoList {
+    width: 300px;
+    margin: 0 auto;
+}
+
+.buttons {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
 }
