@@ -12,13 +12,6 @@ function HW7() {
             <h3>Super select and Super radio</h3>
             {/*should work (должно работать)*/}
             <div>
-                <SuperSelect
-                    options={arr}
-                    value={value}
-                    onChangeOption={onChangeOption}
-                />
-            </div>
-            <div>
                 <SuperRadio
                     name={"radio"}
                     options={arr}
@@ -26,6 +19,14 @@ function HW7() {
                     onChangeOption={onChangeOption}
                 />
             </div>
+            <div>
+                <SuperSelect
+                    options={arr}
+                    value={value}
+                    onChangeOption={onChangeOption}
+                />
+            </div>
+
 
         </div>
     );
